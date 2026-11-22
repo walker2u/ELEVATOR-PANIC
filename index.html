@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#e1d9c8" />
+    <title>Elevator Panic</title>
+    <script src="https://game-cdn.poki.com/scripts/v2/poki-sdk.js"></script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #e1d9c8;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior: none;
+      }
+      #game {
+        display: block;
+        position: fixed;
+        inset: 0;
+      }
+      #safe {
+        position: fixed;
+        visibility: hidden;
+        pointer-events: none;
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-Cp0Vwg75.js"></script>
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="safe"></div>
+  </body>
+</html>
